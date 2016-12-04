@@ -13,6 +13,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<style>
+			td, th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+			
+			details:nth-child(even) {
+				background-color: #dddddd;
+			}
+			
+			a:hover {
+				background-color: rgba(238,238,238,1);
+			}
+		</style>
+		
+		
 	</head>
 	<body>
 
@@ -87,239 +109,267 @@
 					<header>
 						<h2>Products</h2>
 					
-						
-						<details>
-						<summary>ALTIZYME</summary>
-						<p>A Thermostable granular phytase of bacterial origin </p></br>
-						<strong> Composition: </strong></br>
-						Cloned E.coli  phytase gene as recombinant protein with phytase (6- phytase) activity of        ≥ 5000FTU per gram</br>
-						
-						<strong> Product Features: </strong></br>
-						
-						The only phytase resistant to protease inactivation in GI tract 
+					<script>
 
-						Its total activity takes place in acidic pH (Between 3.5 to 5.5) ie. before the feed entering into small intestine for absorption
+					function thisindex(elm){
+  var nodes = elm.parentNode.childNodes, node;
+  var i = 0, count = i;
+  while( (node=nodes.item(i++)) && node!=elm )
+    if( node.nodeType==1 ) count++;
+  return count;
+}
 
-						E. coli phytase was found to be very stable in digesta supernatant from the stomach
+function closeAll(index){
+  var len = document.getElementsByTagName("details").length;
 
-						Phytase inclusion 500FTU/ kg of feed releases 0.12 - 0.17 % of Available phosphorous from phytate bound Phosphorous which replaces 6 – 8 kilogram of Di-Calcium Phosphate in finished feed </br>
-
-						<strong> Dosage and Administration: </strong> </br>
-						100 gm per ton of finished feed or as per the recommendation of qualified Avian Nutritionist</br>
-						
-						<strong> Net Weight: </strong> </br>
-						25Kg HDPE Bags</br>
+  for(var i=0; i<len; i++){
+    if(i != index){
+      document.getElementsByTagName("details")[i].removeAttribute("open");
+    }
+  }
+}
+			</script>
+			
+					<details align="center" onclick="closeAll(thisindex(this));">
+						<summary>ALTIZYME&nbsp;&nbsp;&nbsp;&nbsp;</summary>
+						<p>A Thermostable coated granular phytase of bacterial origin</p>
+						<p align="left"><b> Composition: </b></p>
+						Cloned <i>E.coli</i> phytase gene as recombinant protein with phytase (6- phytase) activity of  ≥ 5000 FTU per gram and is derived from <b>submerged liquid fermentation</b></br>
+						<p align="left"> <b>Product Features: </b></p>
+							<ul align="left" type="square">
+							  <li>*	Thermostable granules</li>
+							  <li>*	Only phytase resistant to protease inactivation in GI tract </li>
+							  <li>*	Total activity takes place in acidic pH (Between 3.5 to 4.5) ie. before the feed entering into small intestine for its absorption</li>
+							  <li><i>*	E. coli</i> phytase was found to be very stable in digesta supernatant from the stomach</li>
+							  <li>*	Phytase inclusion 500FTU/ kg of feed releases 0.12- 0.17 % of Available phosphorous from phytate bound Phosphorous which replaces 6 – 8 kilogram of Di-Calcium Phosphate in finished feed</li>
+							</ul>
+						<p align="left"> <b>Dosage and Administration: </b></p>
+						<p align="left">100 gm per ton of finished feed or as per the recommendation of qualified Avian Nutritionist</p>
+						<p align="left"> <b>Presentation: </b></p>
+						<p align="left"> 25Kg HDPE Bags ( 5 × 5 Kg)</p>
 						</details>
+						
 					
-					
-						<details>
-						<summary>BEGROW</summary>
-						<p>Granular antibiotic growth promoter </p></br>
-						<strong> Composition: </strong></br>
+					<details align="center" onclick="closeAll(thisindex(this));">
+						<summary>BEGROW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
+						<p><b>Granular antibiotic growth promoter</b></p>
+						<p align="left"><b> Composition: </b></p>
 						Each Kilogram contains feed grade Bacitracin Methylene Di-salicylate granules equivalent to 100 gram of Bacitracin
-						</br>
-						<strong> Product Features: </strong></br>
+						<p align="left"> <b>Product Features: </b></p>
+							<ul align="left" type="square">
+							  <li>*	Bacitracin Methylene Di-salicylate is an antibacterial feed additive, derived from  fermentation of <i>Bacillus licheniformis</i></li>
+							  <li>*	It aids in prevention and control of different forms of enteritis in poultry and swine and especially active against <i>Clostridia perfringens</i>, the causative agent of necrotic enteritis </li>
+							  <li>*	Increase the gut wall integrity, helping to ensure the absorption of all nutrients which favours to improve feed efficiency and weight gain</li>
+							  <li>* Not absorbed from the intestinal tract, thus no withdrawal period needed</li>
+							  <li>*	For increased egg production and improved feed efficiency in laying hens administer during 15th  week to 45th  week of production</li>
+							</ul>
+						<p align="left"> <b>Dosage and Administration: </b></p>
+							<p align="left"><b>Broiler and Replacement Chicken:</b></p></br>
+
+							250- 500 gm per ton of finished feed as a growth promoter and to increase the feed efficiency or as per the recommendation of qualified Avian Nutritionist</br>
+
+							<p align="left"><b>Laying Hens:</b></p></br>
+
+							100- 250 gm per ton of finished feed to increase egg production and to increase the feed efficiency from 15th  weeks of age to 45th  weeks of age or as per the recommendation of qualified Avian Nutritionist</br>
+
+							<p align="left"><b>To Control Necrotic Enteritis:</b></p></br>
+
+							1- 2 Kg per ton of finished feed during the outbreak of Necrotic enteritis or based on the severity of the infection for 5- 7 days until subsiding of clinical signs followed or as per recommendation of Avian Physician</br>
+
+						<p align="left"> <b>Net Weight: </b></p>
+						<p align="left"> 25Kg HDPE Bags (5 × 5 Kg)</p>
+						</details>
+
 						
-						 	Bacitracin Methylene Disalicylate is an antibacterial feed additive, derived from fermentation of Bacillus licheniformis 
- 	It aids in prevention and control of different forms of enteritis in poultry and swine and especially active against Clostridia  perfringens, the causative agent of necrotic enteritis
- 	Increase the gut wall integrity, helping to ensure the absorption of all nutrients which favours to improve feed efficiency and weight gain
- 	Not absorbed from the intestinal tract, thus no withdrawal period needed
- 	For increased egg production and improved feed efficiency in laying hens during the 15th to 45 week of production
-						</br>
-						<strong> Dosage and Administration: </strong> </br>
+					<details align="center" onclick="closeAll(thisindex(this));">
+						<summary>FRANGOZYME&nbsp;&nbsp;</summary>
+						<p><i><b>A thermostable micro-granulated Multi -Enzyme</b></i></p>
+						<p>Unique combination of NSP Hydrolysing, Starch Hydrolysing, Protein hydrolyzing, Lipid hydrolyzing and Phytase enzymes for better utilization of feed nutrients</p>
+						<p align="left"> <b>Each Kilogram contains: </b></p></br>
+							<table>
+								<tr>
+									<td>Alpha amylase</td>
+									<td>20,00,000 I U</td>
+								</tr>
+								<tr>
+									<td>Xylanase </td>
+									<td>60,00,000 I U</td>
+								</tr>
+								
+								<tr>
+									<td>Cellulase  </td>
+									<td>60,00,000 I U</td>
+								</tr>
+
+								
+								<tr>
+									<td>Phytase   </td>
+									<td>4,00,000 FTU</td>
+								</tr>
+								
+								<tr>
+									<td>Pectinase    </td>
+									<td>16,00,000 I U</td>
+								</tr>
+
+								<tr>
+									<td>Lipase    </td>
+									<td>5,000 I U</td>
+								</tr>
+								
+								<tr>
+									<td>Protease     </td>
+									<td>1,60,00,000 I U</td>
+								</tr>
+								
+								<tr>
+									<td>Beta Glucanase     </td>
+									<td>7,00,000 I U</td>
+								</tr>
+								
+								<tr>
+									<td>Beta- Mannanase     </td>
+									<td>3,20,000 I U</td>
+								</tr>
+								
+								
+								<tr>
+									<td>Organic Excipients     </td>
+									<td>Q S</td>
+								</tr>
+								
+							</table>
+						<p align="left"><b>Product Features:</b></p>
+							<ul align="left">
+								<li>*	Thermo stable micro granules with good dispensability in feed</li>
+								<li>*	Maximizes the efficacy of conventional and non-conventional feed ingredients</li>
+								<li>*	Degrades anti-nutritional factors present in feed ingredients</li>
+								<li>*	Reduces in digesta viscosity, enhances digestion and absorption of nutrients especially starch, fat and protein, minerals</li>
+								<li>*	Improves Apparent Metabolizable Energy (AME) value of the diet</li>
+								<li>*	Reduces beak impaction and vent plugging, reduces water content of excreta (Wet droppings), reduces production of ammonia from excreta and output of excreta, including reduced N and P</li>
+								<li>*	Increases feed intake, weight gain, and feed conversion ratio (FCR) </li>
+								<li>*	Increases egg production, shell quality and positive effects on egg weight </li>
+								<li>*	Manages constantly changing costs of feed ingredients by optimizing the release of energy sources to the birds</li>
+							</ul>
 						
-Broiler and Replacement Chicken:
+						
+						<p align="left"> <b>Dosage and Administration: </b> </p>
 
-250- 500 gm per ton of finished feed as a growth promoter and to increase the feed efficiency or as per the recommendation of qualified Avian Nutritionist
+						<p align="left" ><b>Breeders, Broilers and Replacement Chickens   	:</b></p>
+						<p align="left">350 gm to 500 gm per ton of finished feed or as per the recommendation of qualified Avian Nutritionist</p>
+						<p align="left" ><b>Egg Laying Birds     :</b></p>
+						<p align="left">250 gm per ton of finished feed or as per the recommendation of qualified  Avian Nutritionist</p>
+						
+						<p align="left"> <b>Packing:</b> </p>
+						<p align="left">25 Kg HDPE bags (5 × 5 Kg)</p>
 
-Laying Hens:
+										
+					</details>
+					
+					
+					<details align="center" onclick="closeAll(thisindex(this));">
+						<summary>FRETOX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
+						<p><i><b>Multitoxin binder, Mould inhibitor and Pathogen Binder</b></i></p>
+						<p align="left"> FRETOX is a unique combination of completely purified selected HSCAS, Organic adsorbents, Buffered organic acid salts, lipotropic agents and antioxidants. It acts with toxins as hydrophobic binding, hydrogen bonding, electrostatic attraction or repulsion, and coordination bonds mechanism and it forms stable and irreversible complexes with the mycotoxins and excreted by the bird. </p>
+						<p align="left"> <b>Product Features: </b></p>
+							<ul>
+								<li align="left">*	Alkaline binder and works well at acidic pH (Crop and Proventriculus) rather than in intestine</li>
+								<li align="left">*	 Broad spectrum - Adsorption and degradation of all mycotoxins in feed</li>
+								<li align="left">* 	Block the binding of toxins with intestine mucosa and preventing its absorption</li>
+								<li align="left">* 	Excellent Mould inhibitor, pathogen binder and bactericidal </li>
+								<li align="left">* 	No binding or damaging vitamins, minerals or other nutritional component of the feeds</li>
+								<li align="left">* 	Extensively tested in vitro and in vivo</li>
+								<li align="left">* 	Increases digestion and absorption of nutrients</li>
+								<li align="left">* 	Good stability during the extrusion and pelleting process of feeds</li>
+							</ul>
 
-100- 250 gm per ton of finished feed to increase egg production and to increase the feed efficiency from 15 weeks of age to 45 weeks of age or as per the recommendation of qualified Avian Nutritionist
-
-To Control Necrotic Enteritis: 
-
-1- 2Kg per ton of finished feed during the outbreak of Necrotic enteritis or based on the severity of the infection for 5- 7 days until subsiding of clinical signs followed 
-						</br>
-						<strong> Net Weight: </strong> </br>
-						 25Kg HDPE Bags</br>
+						<p align="left"><b>Dosage and Administration:</b></p>
+						<p align="left"><b>Standard inclusion	:	</b></p>
+						<p align="left">1 kg/ ton. or as per the recommendation of qualified Avian Nutritionist</p>
+						<p align="left"><b>Recommended dose	:	</b></p>
+						<p align="left">0.5 - 2 kg/ ton. of final feed depending on the extent of the       mycotoxin contamination</p>
+						<p align="left"><b>Packing: </b></p>
+						<p align="left">25Kg HDPE Bag</p>
 						</details>
 					
 					
-					
-					<details>
-						<summary>FRANGOZYME</summary>
-						<p>A thermostable micro-granulated Multi -Enzyme 
-Unique combination of NSP Hydrolysing, Starch Hydrolysing, Protein hydrolyzing, Lipid hydrolyzing and Phytase enzymes for better utilization feed nutrients
- </p></br>
-						<strong> Composition: </strong></br>
-						Each Kilogram contains feed grade Bacitracin Methylene Di-salicylate granules equivalent to 100 gram of Bacitracin
-						</br>
-						<strong> Each 250 gram contains: </strong></br>
-						
-						 	Alpha amylase 	:	5,00,000 I U </br>
-							Xylanase 		:	15,00,000 I U</br>
-							Cellulase 		:	15,00,000 I U</br>
-							Phytase 		:	1,00,000 FTU</br>
-							Pectinase 		:	4,00,000 I U</br>
-							Lipase			:	1,250 I U</br>
-							Acid Protease and Neutral Protease 	:	40,00,000 I U</br>
-							Beta Glucanase	:	1,75,000 I U</br>
-							Beta- Mannanase	:	80,000 I U</br>
-							Excipients	:	Q.s</br>
-</br>
-						<strong> Dosage and Administration: </strong> </br>
-						
-Breeders, Broilers and :                350 gm to 500 gm per ton of finished feed or as per the recommendation 
-Replacement Chickens                 qualified Avian Nutritionist
+					<details align="center" onclick="closeAll(thisindex(this));">
+						<summary>KIMOCARE    </summary>
+						<p><b>Feed Premix & Liquid Supplement</b></p>
+						<p><i>A Complete hepatic protectant with production enhancer</i></p>
+						<p align="left"> <b>Composition: </b></p>
+						<p align="left">A Unique blend of Hepatic stimulants, Lipotropic Agents, Fat solubulizers, Co-enzymes, Readily available aminoacids, Detoxifiers, Immunostimulants and Anti-oxidants </p>
+						<p align="left"> <b>Product Features: </b></p>
+							<ul>
+								<li align="left">*	A powerful supplement for quick recovery of hepatic and kidney disorders  </li>
+								<li align="left">*	Helps to regenerate hepatocyte very quickly during toxicities / Fatty Liver Syndrome</li>
+								<li align="left">*	Enhance digestion and absorption of all nutrients</li>
+								<li align="left">*	Readily available Amino acids  facilitate improved growth and production performance</li>
+								<li align="left">*	Detoxification effect prevents the damage of hepatocytes</li>
+								<li align="left">*	Improves humoral and cell mediated immunity against diseases and  for vaccines</li>
+								<li align="left">*	Improves poultry egg production, hatchability and weight gain</li>
+								<li align="left">*	Improves feed intake  and FCR in broilers</li>
+							</ul>
+							
+							
+							<p align="left"><b>Dosage and Administration:</b></p>
 
-Egg Laying Birds:                         250 gm per ton. of finished feed or as per the recommendation of qualified  
-                                                        Avian Nutritionist
-						</br>
-						<strong> Net Weight: </strong> </br>
-						 25Kg HDPE Bag</br>
+							<p align="left"><b>Feed Premix</b></p>
+
+							<p align="left"><b>Recommended dosage	:	</b>500 gm per ton of feed for birds affected with toxicities and during summer or as per the recommendation of qualified Avian Nutritionist</p>
+							<p align="left"><b>Standard inclusion 	:	</b>250 gm per ton of feed or as per the recommendation of qualified Avian Nutritionist</p>
+							<p align="left"><b>Liquid Supplement</b></p>
+
+							<p align="left"><b>Breeders, Broilers and Laying Hens	:	</b>10 – 20 ml/ 100 birds or as per the recommendation of qualified Avian Nutritionist</p>
+							<p align="left"><b>Layer - Chicks/ Growers       	:	 </b>5 – 10 ml/ 100 birds or as per the recommendation of  qualified       Avian Nutritionist</p>
+
+							<p align="left"><b>Presentation : </b>25 kg (5Kg x 5) HDPE Bag  and 5 Litre TIN (5 ×2)</p>
 						</details>
-					
-					
-					<details>
-						<summary>FRETOX</summary>
-						<p>Multitoxin binder, Mould inhibitor and Pathogen Binder
-A unique combination of Purified selected HSCAS, Organic adsorbents, Buffered organic acid salts, Lipotropic agents and antioxidants 
-</p></br>
-						<strong> Product Features: </strong></br>
-						 	Adsorption and degradation of all mycotoxins with high-efficiency in feed
+									
 
- 	Blocking the binding of toxins with intestine and preventing the adsorption of toxins
+					<details align="center" onclick="closeAll(thisindex(this));">
+						<summary>TYLOFRAN100 </summary>
+						<p>Tylosin phosphate 10 % Feed premix (Granules)</p>
+						<p><b>Efficient Economical Macrolide to combat different microbes</b></p>
+						<p align="left"> <b>Composition: </b> Tylosin Molecule equivalent to 100 gram per kilogram as Tylosin Phosphate</p>
+						<p align="left">•	Macrolide antibiotic, bacteriostatic, with potential for a time-dependent bactericidal action, particularly with high concentrations, derived from <i>Streptomyces fradiae</i>, acting against <i>mycoplasmas</i>, gram positive and gram-negative organism, as well as some <i>Rickettsia sps., and Chlamydia sps</i></p>
 
- 	Excellent Mould inhibitor, pathogen binder and bactericidal 
-
- 	No binding or damaging vitamins, minerals or other nutritional component of the feeds
-
- 	Good stability during the extrusion and pelleting process of feeds
-
-</br>
-						<strong> Dosage and Administration: </strong> </br>
+						<p align="left">•	Tylofran100 possess an antiadhesive activity against Enterobacteriaceae – <i>E. coli, Salmonella spp.</i>, in the gut (hindering their adhesion on the intestinal villi, their penetration through the intestinal mucous membrane and impeding their colonization’s phase as well) leads to better FCR and body weight gain</p>
 						
-Standard inclusion	:	1 kg/ ton. or as per the recommendation of qualified Avian Nutritionist
+						<p align="left">•	Compatible with Ionophore anticoccidials, tetracycline, sulphonamides, spectinomycin and the common dietary components of the feeds</p>
 
-Recommended dose	:	0.5 - 2 kg/ ton. of final feed depending on the extent of the       mycotoxin contamination
-						</br>
-						<strong> Packing: </strong> </br>
-						 25Kg HDPE Bag</br>
-						</details>
-					
-					
-					<details>
-						<summary>KIMOCARE Feed Premix</summary>
-						<p>A Complete hepatic protectant with production enhancer
-
-
- </p></br>
-						<strong> Composition: </strong></br>
-						A Unique blend of Hepatic stimulants, Lipotropic Agents, Fat solubulizers, Co-enzymes, Readily available aminoacids, Detoxifiers, Immunostimulants and Anti-oxidants 
-</br>
-						<strong> Product Features: </strong></br>
 						
-						 	 	Potentiate hepatocytes to enhance liver function
+						<p align="left"><b>Indications:</b></p>
+						<p align="left">•	Improves weight gain and feed conversion efficiency as a growth promoter</p>
 
- 	Catalyse the breakdown of  fat during body metabolism and mobilise the fat from hepatic cells
+						<p align="left">•	Effective against tylosin-sensitive pathogenic microorganisms, Mycoplasmosis, Chronic Respiratory Disease, Necrotic Enteritis, Infectious Synovitis in chickens and turkeys, Spirochetosis (Borreliosis) in chickens and Dysentery in pigs. </p>
 
- 	Helps to regenerate hepatocytes very quickly during intoxification/ Fatty Liver Syndrome
-
- 	Enhance digestion and absorption of all nutrients
-
- 	Readily available Amino acids  facilitate improved growth and production performance
-
- 	Detoxification and prevent the damage of hepatocytes
-
- 	Improves humoral and cell mediated immunity against diseases and  for vaccines
-</br>
-						<strong> Dosage and Administration: </strong> </br>
 						
-Recommended dosage	:	500 gm per ton of feed for birds affected with toxicosis and during summer or as per the recommendation of qualified Avian Nutritionist
+						<p align="left"> <b>Mode of administration </b></p>
 
-Standard inclusion 	:	250 gm per ton of feed or as per the recommendation of qualified Avian Nutritionist
+						<p align="left">•	Orally, well homogenized by mixing the measured quantity of the <b>Tylofran 100 </b>(calculated on the basis of the prescribed dose) with a suitable quantity (20-25 kg) of feed ingredients before incorporation in to final mix for thorough dispersion.</p>
 
-						</br>
-						<strong> Packing : </strong> </br>
-						 5Kg HDPE Bag</br>
-						</details>
-					
-					
-					<details>
-						<summary>KIMOCARE LIQUID</summary>
-						<p>A Complete hepatic protectant with production enhancer
-
-
- </p></br>
-						<strong> Composition: </strong></br>
-A Unique blend of Hepatic stimulants, Lipotropic Agents, Fat solubulizers, Co-enzymes, Readily available aminoacids, Detoxifiers, Immunostimulants and Anti-oxidants 
 						
-						</br>
-						<strong> Product Features: </strong></br>
-						
-	 	Potentiate hepatocytes to enhance liver function
+						<p align="left"> <b>Product Features: </b></p>
 
- 	Catalyse the breakdown of  fat during body metabolism and mobilise the fat from hepatic cells
+						<p align="left">•	Helps to protect the monogastric animals from Gram-positive, Gram negative bacteria and mycoplasma</p>
+						<p align="left">•	Excellent  growth-promoting agent in monogastric animals</p>
+						<p align="left">•	Improves Feed conversion ratio (FCR), Weight gain, Egg production and Hatchability</p>
 
- 	Helps to regenerate hepatocytes very quickly during intoxification/ Fatty Liver Syndrome
+						<p align="left"><b>Dosage and Administration: </b></p>
 
- 	Enhance digestion and absorption of all nutrients
+						<p align="left"><b>Broiler and Chicken (replacements)	:	</b>750 - 1000 grams per ton of feed. Administer in feed to chickens 0 to 7 days of age, follow with subsequent administration in feed for 5 days at interval of 3 to 4 weeks or as per the recommendation of qualified Avian Physician</p>
 
- 	Readily available Amino acids  facilitate improved growth and production performance
-
- 	Detoxification and prevent the damage of hepatocytes
-
- 	Improves humoral and cell mediated immunity against diseases and  for vaccines
-
-</br>
-						<strong> Dosage and Administration: </strong> </br>
-						
-Breeders, Broilers and
-Laying Hens	:	10 – 20 ml/ 100 birds or as per the recommendation of qualified Avian Nutritionist
-
-Layer - Chicks/ Growers       	
-:	
-5 – 10 ml/ 100 birds or as per the recommendation of  qualified Avian Nutritionist
+						<p align="left"><b>Breeder and Laying Birds	:	</b>200 g to 500 g  per ton of feed for 5 days once in a month  or as per the recommendation of qualified Avian Physician</p>
 
 
-						</br>
-						<strong> Packing : </strong> </br>
-						 5 Litre</br>
-						</details>
-					
-				
+						<p align="left"><b>Withdrawal Period: </b></p>
+						<p align="left">For meat:  Avian Species (Poultry) – 5 days after the last administration if dosage of    
+						<b>Tylofran100</b> exceeds 800 gram per ton of feed preparation.</p>
 
-	<details>
-						<summary>TYLOFRAN 100</summary>
-						<p>Tylosin phosphate 10 % Feed premix
- </p></br>
-						<strong> Composition: </strong></br>
-
-Each Kilogram contains:  Tylosin Molecule equivalent to 100 gram as Tylosin Phosphate
-						
-						</br>
-						<strong> Product Features: </strong></br>
-						
-	 	 	Bacteriostatic Feed additive, derived from Streptomyces fradiae
- 	Helps to protect the monogastric animals from Gram-positive, Gram negative bacteria, spirochete and mycoplasma
-
- 	Excellent  growth-promoting agent in monogastric animals
- 	Improves Feed conversion ratio (FCR), Weight gain, Egg production and Hatchability
- 	Compatible with ionophore anticoccidials, sulphonamides, tetracyclines and all type of feedstuffs
- 	Do not use in feeds containing bentonite
-
-</br>
-						<strong> Dosage and Administration: </strong> </br>
-						
-Broiler and Replacement Chickens	:	750 - 1000 grams per ton of feed. Administer in feed to chickens 0 to 7 days of age, follow with subsequent administration in feed for 5 days at interval of 3 to 4 weeks.
-
-Breeder and Laying Birds	:	200 gm to 500 gm per ton of feed for 5 days once in a month  or as per the recommendation of qualified Avian Physician
-
-
-
-						</br>
-						<strong> Packing : </strong> </br>
-						 20 Kg HDPE Bag (1Kg × 20)</br>
+						<p align="left"><b>PACKING: </b>1 Kg and 20 Kg HDPE multi-layer paper bags.</p.					 
+						 
+						 
 						</details>
 					
 				
@@ -351,16 +401,16 @@ Breeder and Laying Birds	:	200 gm to 500 gm per ton of feed for 5 days once in a
 						<!-- Lightbox Gallery  -->
 						<div class="container 75% gallery">
 							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/Frango_Img2.jpg" class="image fit from-left"><img src="images/Frango_Img2.jpg" title="The Anonymous Red" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/Frango_Img3.jpg" class="image fit from-right"><img src="images/Frango_Img3.jpg" title="Airchitecture II" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/Frango_Img2.jpg" class="image fit from-left"><img src="images/Frango_Img2.jpg" title="" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/Frango_Img3.jpg" class="image fit from-right"><img src="images/Frango_Img3.jpg" title="" alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/Frango_Img8.jpg" class="image fit from-left"><img src="images/Frango_Img8.jpg" title="Air Lounge" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/Frango_Img9.jpg" class="image fit from-right"><img src="images/Frango_Img9.jpg" title="Carry on" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/Frango_Img8.jpg" class="image fit from-left"><img src="images/Frango_Img8.jpg" title="" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/Frango_Img9.jpg" class="image fit from-right"><img src="images/Frango_Img9.jpg" title="" alt="" /></a></div>
 							</div>
 							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/Frango_Img10.jpg" class="image fit from-left"><img src="images/Frango_Img10.jpg" title="The sparkling shell" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/Frango_Img12.jpg" class="image fit from-right"><img src="images/Frango_Img12.jpg" title="Bent IX" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/Frango_Img10.jpg" class="image fit from-left"><img src="images/Frango_Img10.jpg" title="" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/Frango_Img12.jpg" class="image fit from-right"><img src="images/Frango_Img12.jpg" title="" alt="" /></a></div>
 							</div>
 						</div>
 				</div>
@@ -376,14 +426,13 @@ Breeder and Laying Birds	:	200 gm to 500 gm per ton of feed for 5 days once in a
 							AUSTRALIA</br>
 							Email: info@frangolifescience.com</br>
 							www.frangolifescience.com</br>
-							Customer care Australia: +61 469 029 878</br>
-							Customer Care India    : : +91 9480 8839 93</br>
+							Customer care: +61 469 029 878 / + 91 9480 8839 93</br>
 							               
 						</p>
 					</header>
 					<div class="box container 75%">
 
-					<!-- Contact Form 
+					<!-- Contact Form  -->
 							<form method="post" action="#">
 								<div class="row 50%">
 									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
@@ -400,7 +449,7 @@ Breeder and Laying Birds	:	200 gm to 500 gm per ton of feed for 5 days once in a
 									</div>
 								</div>
 							</form>
-					-->
+					
 
 					</div>
 				</div>
